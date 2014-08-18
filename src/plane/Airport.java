@@ -5,8 +5,42 @@ import java.util.LinkedList;
 
 
 public class Airport {
+	
+	
+	public static Plane buildPlane(PlaneType model){
+		
+		Plane plane = null;
+		
+		
+		switch(model){
+		
+		case PASSANGER:
+			plane = new PassangerPlane();
+			break;
+			
+		case FREIGHT:
+			plane = new FreighterPlane();
+			break;
+			default :
+				
+			
+			
+		}
+		return plane;
+		
+		
+	}
+	
+	
+}
+	
+	
+	
+	
+	
+	
 
-		private ArrayList<Airliner> airliners;
+	/*	private ArrayList<Airliner> airliners;
 		private ArrayList<Freighter> freighters;
 		private static Airport instance;
 		
@@ -38,5 +72,5 @@ public class Airport {
 		public void setAirliners(ArrayList<Airliner> airliners) {
 			this.airliners = airliners;
 		}
-		
-}
+		*/
+//}

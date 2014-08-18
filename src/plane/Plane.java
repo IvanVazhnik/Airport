@@ -2,7 +2,40 @@ package plane;
 
 public abstract class Plane {
 	
-	protected String name;
+	
+	public Plane (PlaneType model){
+		
+		
+		this.model = model;
+		arrangeParts();
+		
+		}
+	
+	private void arrangeParts(){
+		
+		String name;
+		int flyRange;
+		int fuelConsumpion;
+		int flySpeed;
+		
+		
+	}
+	
+	protected abstract void construct();
+	
+	private PlaneType model = null;
+	
+	public PlaneType getModel(){
+		return model;
+		
+	}
+	
+	public void setModel(PlaneType model)
+	{
+		this.model = model;
+	}
+}
+	/*protected String name;
 	protected int maxHeight;
 	protected int fuelConsumption;
 	protected int range;
@@ -78,4 +111,5 @@ public abstract class Plane {
 	public void setRange(int range) {
 		this.range = range;
 	}
-}
+*/
+//}

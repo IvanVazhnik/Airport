@@ -6,7 +6,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 public class Freighter extends Plane {
 
-	String nameFile;
+	/*String nameFile;
 	
 	private int capacity;
 	
@@ -52,5 +52,5 @@ public class Freighter extends Plane {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-
+*/
 }
